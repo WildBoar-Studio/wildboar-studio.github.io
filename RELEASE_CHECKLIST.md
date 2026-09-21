@@ -9,10 +9,13 @@ of each app. Nothing is broken in the meantime:
 ## Do on the next WindRunner version
 - [ ] Support URL → `https://wildboarstudios.io/support/`
 - [ ] Privacy Policy URL → `https://wildboarstudios.io/windrunner/privacy/`
+- [ ] Marketing URL → `https://wildboarstudios.io`  (this is what AdMob's crawler reads
+      to verify app-ads.txt — there is NO developer-URL field inside AdMob itself)
 
 ## Do on the next Selah version
 - [ ] Support URL → `https://wildboarstudios.io/support/`
 - [ ] Privacy Policy URL → `https://wildboarstudios.io/selah/privacy/`
+- [ ] Marketing URL → `https://wildboarstudios.io`
 
 ## Before Flip Fall / YapIt first release
 - [ ] Finalize the draft privacy policies (`/flipfall/privacy/`, `/yapit/privacy/`)
@@ -24,6 +27,9 @@ of each app. Nothing is broken in the meantime:
 - [ ] Add the new app's App Store link to the website app card (replace "Coming soon").
 
 ## Other (whenever convenient)
-- [ ] AdMob: set developer website to `wildboarstudios.io` (finds app-ads.txt).
+- [ ] AdMob: after the marketing URLs above are live on a new version, open AdMob →
+      Apps → View all apps → app-ads.txt → expand the app → "Check for updates" to
+      force a re-crawl (it verifies against the store's marketing URL; no URL field
+      exists inside AdMob).
 - [ ] Google Search Console: add property + submit `sitemap.xml`.
 - [ ] Optionally tighten DMARC from `p=none` once reports confirm mail passes.
