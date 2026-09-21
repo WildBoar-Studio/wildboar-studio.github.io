@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy — YapIt</title>
+<link rel="icon" href="/assets/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/styles.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="/"><img src="/assets/apple-touch-icon.png" alt="Wild Boar Studios logo"><span>Wild Boar Studios</span></a>
+    <nav class="nav-links"><a href="/#apps">Apps</a><a href="/support/">Support</a></nav>
+  </div>
+</header>
+
+<main class="doc">
+  <a class="back" href="/">← Back to home</a>
+  <h1>Privacy Policy — YapIt</h1>
+  <p class="date">Last updated: September 21, 2026 · <em>Draft — pending App Store release</em></p>
+
+  <p>Wild Boar Studios ("we", "our", or "us") operates the YapIt mobile application. YapIt turns text you provide into spoken audio. We designed it to keep your content private.</p>
+
+  <h2>The Short Version</h2>
+  <ul>
+    <li>We do <strong>not</strong> store your text, generated audio, or documents on our servers.</li>
+    <li>You are identified only by an <strong>anonymous ID</strong> generated on your device.</li>
+    <li>Generated audio is cached <strong>on your device</strong> for free, offline replays.</li>
+    <li>We do <strong>not</strong> use advertising or cross-app tracking.</li>
+  </ul>
+
+  <h2>Content You Provide</h2>
+  <p>To create narration, the text you paste, import, or capture is sent to our backend, which forwards it to our text-to-speech provider (OpenAI) to synthesize audio. We do <strong>not</strong> persist your text, the generated audio, or timing data on our servers — there is no server-side storage of your content. The resulting audio is stored only in a cache on your device, which enables free re-listening and offline playback. Please avoid submitting sensitive personal information as text to be narrated.</p>
+
+  <h2>Anonymous Identifier</h2>
+  <p>On first launch, the app generates a random anonymous identifier stored in your device's Keychain. It is not linked to your real-world identity, Apple ID, email, or any advertising identifier. We use it to associate your subscription status with your installation and to enforce fair-use limits.</p>
+
+  <h2>Purchases</h2>
+  <p>If you subscribe to YapIt Premium, we store your subscription status associated with your anonymous identifier. All payment processing is handled by Apple; we never receive or store your payment details.</p>
+
+  <h2>Third-Party Services</h2>
+  <table>
+    <tr><th>Provider</th><th>What is shared</th><th>Why</th></tr>
+    <tr><td>Apple</td><td>Purchases (StoreKit)</td><td>Payments &amp; subscriptions</td></tr>
+    <tr><td>Cloudflare</td><td>Requests, including the anonymous identifier</td><td>Hosting our backend</td></tr>
+    <tr><td>OpenAI</td><td>Text you submit for narration</td><td>Generating speech audio; not retained by us</td></tr>
+  </table>
+  <p>We do not sell your data or share it with advertisers or data brokers.</p>
+
+  <h2>Tracking</h2>
+  <p>YapIt does not track you across apps or websites and does not use the advertising identifier (IDFA). We do not show ads.</p>
+
+  <h2>Children's Privacy</h2>
+  <p>YapIt is a general-audience app and does not knowingly collect personal information from children. Because we do not collect names, emails, or contact information, the app does not gather personal details from users of any age.</p>
+
+  <h2>Data Retention and Deletion</h2>
+  <p>Your generated audio lives only on your device; deleting the app removes it. To request deletion of the limited server-side data associated with your anonymous identifier (subscription status and usage counters), contact us below.</p>
+
+  <h2>Changes to This Policy</h2>
+  <p>We may update this policy from time to time. Changes will be posted here with an updated date.</p>
+
+  <h2>Contact</h2>
+  <p>Questions? Contact us at <a href="mailto:wildboarstudio@gmail.com">wildboarstudio@gmail.com</a>.</p>
+</main>
+
+<footer class="site-footer">
+  <div class="container"><div class="footer-legal" style="border-top:none">
+    <span>© <span id="yr"></span> Wild Boar Studios LLC. All rights reserved.</span>
+    <span><a href="mailto:wildboarstudio@gmail.com">wildboarstudio@gmail.com</a></span>
+  </div></div>
+</footer>
+<script>document.getElementById('yr').textContent=new Date().getFullYear();</script>
+</body>
+</html>
